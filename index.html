@@ -3,13 +3,33 @@
 <head>
 	<meta charset="UTF-8">
 	<title>I'm learning Vue.js </title>
+	<link rel="stylesheet" href="style.css">
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="app.js"></script>
 </head>
 <body>
 	<div id="app">
-		
-	</div>
+		<p v-if="isLoading">Loading</p>
 
-	<script src="app.js"></script>
+		<div class="cart">
+			<div class="item" v-for="item in cart">
+				<div class="image">
+					<a href="">
+						<img src="" alt="" height="150" width="150">
+					</a>
+				</div>
+				<div class="info">
+					<h3>Başlık</h3>
+					<p class="seller">by ender</p>
+					<p class="status available">In Stock</p>
+					<p class="shipping"></p>
+					<a href="">Delete</a>
+					<a href="" class="secondary">Save for later</a>
+				</div>
+			</div>
+
+			
+		</div>
+	</div>
 </body>
 </html>
