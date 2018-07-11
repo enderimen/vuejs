@@ -7,24 +7,25 @@
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 	<script src="app.js"></script>
 </head>
-<body>
+<body bgcolor="#9C27B0">
 	<div id="app">
-		<p v-if="isLoading">Loading</p>
-
+		<center><img class="loading" src="http://www.chimply.com/coconut/images/1218236" alt="" v-if="isLoading"></center>	
+		<h3 class="shopping_title" v-if="!isLoading">Saatler</h3>
 		<div class="cart">
-			<div class="item" v-for="item in cart">
+
+			<div class="item" v-for="(item, index) in cart">
 				<div class="image">
-					<a href="">
-						<img src="" alt="" height="150" width="150">
+					<a v-bind:href="item.url">
+						<img v-bind:src="item.image" alt="" height="150" width="150">
 					</a>
 				</div>
 				<div class="info">
-					<h3>Başlık</h3>
-					<p class="seller">by ender</p>
-					<p class="status available">In Stock</p>
-					<p class="shipping"></p>
-					<a href="">Delete</a>
-					<a href="" class="secondary">Save for later</a>
+					<h3>{{ item.name }}</h3>
+					<p class="seller">{{item.seller}}</p>
+					<span class="status available" v-if="item.isAvailable">In Stock,</span>
+					<span class="shipping" v-if="item.isEligible">Eligible for FREE Shipping</span>
+					<a href="" v-on:click="removeFromCart(index)">Delete</a> |
+					<a href="" class="secondary">Move To Cart</a>
 				</div>
 			</div>
 

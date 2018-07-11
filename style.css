@@ -1,9 +1,13 @@
+.loading {
+	margin-top: 260px;
+}
+
 .cart {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	height: 500px;
+	height: 100%;
 	width: 100%;
 }
 
@@ -11,14 +15,29 @@
 	height: 150px;
 	width: 400px;
 	display: flex;
-	flex-direction: row;
-	background-color: yellow;
+	background-color: white;
 	box-shadow: 1px 1px 1px gray;
 	border-radius: 5px;
 	cursor: pointer;
-	transition: all .2s; 
+	transition: all .2s;
+	margin-top: 7px; 
 }
 
 .item:hover {
 	transform: scale(1.05);
+}
+
+.shopping_title {
+	text-align: center;
+}
+.image img {
+	margin-left: 5px;
+}
+
+.shopping_title {
+	color: #FFC107;
+}
+
+.item a {
+	text-decoration: none;
 }
