@@ -12,7 +12,7 @@
 		<center><img class="loading" src="http://www.chimply.com/coconut/images/1218236" alt="" v-if="isLoading"></center>	
 		<h3 class="shopping_title" v-if="!isLoading">Watches ({{ cart.length }})</h3>
 		<div class="cart">
-
+			<p v-if="!cart.length" style="color: white">No item in cart</p>
 			<div class="item" v-for="(item, index) in cart">
 				<div class="image">
 					<a v-bind:href="item.url">
@@ -25,9 +25,12 @@
 					<span class="status available" v-if="item.isAvailable">In Stock,</span>
 					<span class="shipping" v-if="item.isEligible">Eligible for FREE Shipping</span>
 					<a href="#" v-on:click="removeFromCart(index)">Delete</a> |
-					<a href="#" v-on:click="saveForLater(index)" class="secondary">Move To Cart</a>
+					<a href="#" v-on:click="saveForLater(index)" class="secondary">Save For Later</a>
+					<span class="total">Price: ${{ item.price }}</span>
 				</div>
 			</div>
+
+			<span class="subTotal">Subtotal: ({{ cart.length }} items): ${{ cartTotal }}</span>
 		</div>
 
 		<h3 class="shopping_title" v-if="!isLoading">Save For Later ({{ saved.length }})</h3>
@@ -45,6 +48,7 @@
 					<span class="shipping" v-if="item.isEligible">Eligible for FREE Shipping</span>
 					<a href="#" v-on:click="removeFromSavedList(index)">Delete</a> |
 					<a href="#" v-on:click="moveToCart(index)" class="secondary">Move To Cart</a>
+					<span class="total">Price: ${{ item.price }}</span>
 				</div>
 			</div>
 		</div>
