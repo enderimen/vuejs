@@ -1,39 +1,41 @@
 {
 	"cart":[
-	{
-		"url" : "https://foto-saatvesaat.mncdn.com/media/catalog/product/l/a/lac2010871.jpg",
-		"image": "https://foto-saatvesaat.mncdn.com/media/catalog/product/l/a/lac2010871.jpg",
-		"name": "Montre Femme Marque FG29",
-		"seller": "by Ender İMEN",
-		"isAvailable": "true",
-		"isEligible" : "true"	
-	},
+		{
+			"url" : "https://foto-saatvesaat.mncdn.com/media/catalog/product/l/a/lac2010871.jpg",
+			"image": "https://foto-saatvesaat.mncdn.com/media/catalog/product/l/a/lac2010871.jpg",
+			"name": "Montre Femme Marque FG29",
+			"seller": "by Ender İMEN",
+			"isAvailable": true,
+			"isEligible" : true	
+		},
 
-	{
-		"url" : "https://bijouterie-carador.com/15513/montre-femme-elixa-finesse-bleue--cuir-et-cristaux-e114-l464.jpg",
-		"image": "https://bijouterie-carador.com/15513/montre-femme-elixa-finesse-bleue--cuir-et-cristaux-e114-l464.jpg",
-		"name": "Cluse",
-		"seller": "by Muhammed EMİN",
-		"isAvailable": "false",
-		"isEligible" : "false"	
-	},	
+		{
+			"url" : "https://bijouterie-carador.com/15513/montre-femme-elixa-finesse-bleue--cuir-et-cristaux-e114-l464.jpg",
+			"image": "https://bijouterie-carador.com/15513/montre-femme-elixa-finesse-bleue--cuir-et-cristaux-e114-l464.jpg",
+			"name": "Cluse",
+			"seller": "by Muhammed EMİN",
+			"isAvailable": false,
+			"isEligible" : false	
+		},	
 
-	{
-		"url" :  "https://foto-saatvesaat.mncdn.com/media/catalog/product/l/a/lac2010766.jpg",
-		"image": "https://foto-saatvesaat.mncdn.com/media/catalog/product/l/a/lac2010766.jpg",
-		"name": "Chronos",
-		"seller": "by Ahmet Enes ADLIĞ",
-		"isAvailable": "true",
-		"isEligible" : "true"	
-	},
-
-	{
-		"url" :  "https://foto-saatvesaat.mncdn.com/media/catalog/product/l/a/lac2010766.jpg",
-		"image": "https://foto-saatvesaat.mncdn.com/media/catalog/product/l/a/lac2010766.jpg",
-		"name": "Chronos",
-		"seller": "by Ahmet Enes ADLIĞ",
-		"isAvailable": "true",
-		"isEligible" : "true"	
-	}
-]
+		{
+			"url" :  "https://foto-saatvesaat.mncdn.com/media/catalog/product/l/a/lac2010766.jpg",
+			"image": "https://foto-saatvesaat.mncdn.com/media/catalog/product/l/a/lac2010766.jpg",
+			"name": "Chronos",
+			"seller": "by Ahmet Enes ADLIĞ",
+			"isAvailable": true,
+			"isEligible" : true	
+		}
+	],
+	
+	"saved":[
+		{
+			"url" : "https://foto-saatvesaat.mncdn.com/media/catalog/product/l/a/lac2010871.jpg",
+			"image": "https://foto-saatvesaat.mncdn.com/media/catalog/product/l/a/lac2010871.jpg",
+			"name": "Montre Femme Marque FG29",
+			"seller": "by Ender İMEN",
+			"isAvailable": true,
+			"isEligible" : true	
+		}
+	]
 }
