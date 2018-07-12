@@ -41,3 +41,13 @@
 .item a {
 	text-decoration: none;
 }
+
+.total {
+	float: right;
+	margin-right: 5px;
+}
+
+.subTotal {
+	margin-top: 10px;
+	color: white;
+}
