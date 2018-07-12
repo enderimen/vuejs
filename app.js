@@ -11,11 +11,22 @@ window.addEventListener('load',() => {
 		methods:{
 			removeFromCart(index) {
 				this.cart.splice(index,1);
+			},
+			saveForLater(index) {
+				const item = this.cart.splice(index,1);
+				this.saved.push(item[0]);
+			},
+			removeFromSavedList(index) {
+				this.saved.splice(index,1);
+			},
+			moveToCart(index) {
+				const item = this.saved.splice(index,1);
+				this.cart.push(item[0]);
 			}
 		},
 		created(){
 			
-			//setTimeout(() => {
+			setTimeout(() => {
 			fetch('./data.json')
 			.then((res) => { return res.json()	})
 			.then((res) => {
@@ -24,7 +35,7 @@ window.addEventListener('load',() => {
 				this.save = res.saved;
 			})
 
-		//}, 2000);
+		}, 2000);
 
 		}
 
