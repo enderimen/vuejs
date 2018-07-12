@@ -10,7 +10,7 @@
 <body bgcolor="#9C27B0">
 	<div id="app">
 		<center><img class="loading" src="http://www.chimply.com/coconut/images/1218236" alt="" v-if="isLoading"></center>	
-		<h3 class="shopping_title" v-if="!isLoading">Saatler</h3>
+		<h3 class="shopping_title" v-if="!isLoading">Watches ({{ cart.length }})</h3>
 		<div class="cart">
 
 			<div class="item" v-for="(item, index) in cart">
@@ -21,15 +21,32 @@
 				</div>
 				<div class="info">
 					<h3>{{ item.name }}</h3>
-					<p class="seller">{{item.seller}}</p>
+					<p class="seller">{{ item.seller }}</p>
 					<span class="status available" v-if="item.isAvailable">In Stock,</span>
 					<span class="shipping" v-if="item.isEligible">Eligible for FREE Shipping</span>
-					<a href="" v-on:click="removeFromCart(index)">Delete</a> |
-					<a href="" class="secondary">Move To Cart</a>
+					<a href="#" v-on:click="removeFromCart(index)">Delete</a> |
+					<a href="#" v-on:click="saveForLater(index)" class="secondary">Move To Cart</a>
 				</div>
 			</div>
+		</div>
 
-			
+		<h3 class="shopping_title" v-if="!isLoading">Save For Later ({{ saved.length }})</h3>
+		<div class="cart">
+			<div class="item" v-for="(item , index) in saved">
+				<div class="image">
+					<a v-bind:href="item.url">
+						<img v-bind:src="item.image" alt="" height="150" width="150">
+					</a>
+				</div>
+				<div class="info">
+					<h3>{{ item.name }}</h3>
+					<p class="seller">{{ item.seller }}</p>
+					<span class="status available" v-if="item.isAvailable">In Stock,</span>
+					<span class="shipping" v-if="item.isEligible">Eligible for FREE Shipping</span>
+					<a href="#" v-on:click="removeFromSavedList(index)">Delete</a> |
+					<a href="#" v-on:click="moveToCart(index)" class="secondary">Move To Cart</a>
+				</div>
+			</div>
 		</div>
 	</div>
 </body>
