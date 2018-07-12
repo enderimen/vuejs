@@ -3,10 +3,11 @@
 		{
 			"url" : "https://foto-saatvesaat.mncdn.com/media/catalog/product/l/a/lac2010871.jpg",
 			"image": "https://foto-saatvesaat.mncdn.com/media/catalog/product/l/a/lac2010871.jpg",
-			"name": "Montre Femme Marque FG29",
+			"name": "Montre FG29",
 			"seller": "by Ender İMEN",
 			"isAvailable": true,
-			"isEligible" : true	
+			"isEligible" : true,
+			"price": 69.44	
 		},
 
 		{
@@ -15,7 +16,8 @@
 			"name": "Cluse",
 			"seller": "by Muhammed EMİN",
 			"isAvailable": false,
-			"isEligible" : false	
+			"isEligible" : false,
+			"price": 32.99
 		},	
 
 		{
@@ -24,7 +26,8 @@
 			"name": "Chronos",
 			"seller": "by Ahmet Enes ADLIĞ",
 			"isAvailable": true,
-			"isEligible" : true	
+			"isEligible" : true,
+			"price": 15.98
 		}
 	],
 	
@@ -35,7 +38,8 @@
 			"name": "Montre Femme Marque FG29",
 			"seller": "by Ender İMEN",
 			"isAvailable": true,
-			"isEligible" : true	
+			"isEligible" : true,
+			"price": 20
 		}
 	]
 }
